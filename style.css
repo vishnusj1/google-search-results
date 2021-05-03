@@ -158,6 +158,10 @@ input:focus {
 
 /*Result section */
 
+.item {
+    margin: 30px 0;
+}
+
 
 /* stats */
 
@@ -192,3 +196,56 @@ input:focus {
     display: flex;
     flex-direction: column;
 }
+
+
+/* also ask */
+
+.also-ask {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.also-ask * {
+    color: var(--color-s-alt);
+    padding: 10px;
+    border-bottom: 1px solid #ecedef;
+    ;
+}
+
+
+/* Related Searches*/
+
+.related-searches {
+    display: flex;
+    flex-direction: column;
+}
+
+.related-searches * {
+    color: var(--color-s-alt);
+    padding: 10px;
+    border-bottom: 1px solid #ecedef;
+    ;
+}
+
+.break {
+    display: flex;
+    margin: 8px 0;
+    align-items: center;
+}
+
+.break p {
+    margin: 0 0 0 8px;
+    font-size: 12px;
+    color: var(--color-s);
+}
+
+.break .line {
+    background-color: #ecedef;
+    height: 1px;
+    width: 100%;
+}
+
+
+/* Footer */
