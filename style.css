@@ -1,0 +1,194 @@
+:root {
+    --color-p: #1a0dab;
+    --color-s: #4d5156;
+    --color-s-alt: #202124;
+    --color-b: #1a73e8;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/* Remove default padding */
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Image reset */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: var(--color-p);
+    font-weight: 300;
+}
+
+p {
+    color: var(--color-s);
+}
+
+
+/* Main CSS Starts here*/
+
+
+/* Navigation-bar*/
+
+nav {
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+nav>.logo {
+    height: 30px;
+    width: 92px;
+    margin-right: 50px;
+}
+
+
+/* Learned to postion an item with flex and use margin to create space for the next item */
+
+nav>.search-field {
+    margin: 0 auto 0 0;
+    width: 690px;
+}
+
+.search-field {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+    border-radius: 24px;
+    height: 45px !important;
+}
+
+.search-field input {
+    height: 40px;
+    width: 640px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-style: hidden;
+}
+
+input:focus {
+    outline: none;
+}
+
+.apps-sign-in {
+    align-self: flex-end;
+}
+
+.apps-sign-in button {
+    background-color: var(--color-b);
+    padding: 10px 30px;
+    border: hidden;
+    border-radius: 4px;
+    color: white;
+}
+
+
+/* navigation icons */
+
+.navigation {
+    margin-top: 10px;
+    display: flex;
+    border-bottom: 1px solid #ebebeb
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto 0 180px;
+    padding: 0;
+}
+
+.navigation ul li:nth-child(1) {
+    border-bottom: 3px solid var(--color-b);
+}
+
+.navigation ul li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+
+/*Result section */
+
+
+/* stats */
+
+.stats {
+    margin-top: 10px;
+}
+
+
+/* Container */
+
+.search-results {
+    margin-top: 10px;
+    clear: both;
+    position: relative;
+    margin-left: 180px;
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* AD */
+
+.ad {
+    display: flex;
+    flex-direction: column;
+}
